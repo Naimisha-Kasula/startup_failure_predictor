@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Startup Analysis - Dashboard</title>
+
+    <link rel="stylesheet"
+          href="./dashboard.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- =================================================
+         FIXED SIDEBAR
+    ================================================== -->
+
+    <aside class="sidebar">
+
+
+        <!-- SIDEBAR HEADER -->
+
+        <div class="sidebar-header">
+
+            <div class="logo">
+                🚀
+            </div>
+
+            <div>
+
+                <h2>
+                    Startup Predictor
+                </h2>
+
+                <p>
+                    Predict. Analyze. Decide.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- SIDEBAR NAVIGATION -->
+
+        <nav class="sidebar-nav">
+
+
+            <!-- DASHBOARD -->
+
+            <a href="./dashboard.html"
+               class="nav-item active">
+
+                <span>
+                    🏠
+                </span>
+
+                <span>
+                    Dashboard
+                </span>
+
+            </a>
+
+
+            <!-- ANALYSIS -->
+
+            <a href="./analysis.html"
+               class="nav-item">
+
+                <span>
+                    📊
+                </span>
+
+                <span>
+                    Analysis
+                </span>
+
+            </a>
+
+
+            <!-- IMPROVEMENTS -->
+
+            <a href="./improvements.html"
+               class="nav-item">
+
+                <span>
+                    💡
+                </span>
+
+                <span>
+                    Improvements
+                </span>
+
+            </a>
+
+
+            <!-- TRACKING -->
+
+            <a href="./tracking.html"
+               class="nav-item">
+
+                <span>
+                    📈
+                </span>
+
+                <span>
+                    Tracking
+                </span>
+
+            </a>
+
+
+            <!-- RULES -->
+
+            <a href="./rules.html"
+               class="nav-item">
+
+                <span>
+                    ⚖️
+                </span>
+
+                <span>
+                    Rules & Regulations
+                </span>
+
+            </a>
+
+
+        </nav>
+
+
+        <!-- SIDEBAR BOTTOM -->
+
+        <div class="sidebar-bottom">
+
+            <button id="logoutBtn"
+                    class="logout-btn">
+
+                <span>
+                    🚪
+                </span>
+
+                <span>
+                    Logout
+                </span>
+
+            </button>
+
+        </div>
+
+
+    </aside>
+
+
+
+    <!-- =================================================
+         MAIN CONTENT
+    ================================================== -->
+
+    <main class="main-content">
+
+
+        <!-- =================================================
+             WELCOME SECTION
+        ================================================== -->
+
+        <section class="welcome-section">
+
+            <h2>Welcome back, <span id="founderName">User</span></h2>
+<p id="companyName">Company Name</p>
+                Manage your startup analysis,
+                improvements, tracking and regulations
+                from one place.
+
+            </p>
+
+        </section>
+
+
+
+        <!-- =================================================
+             FOUR DASHBOARD OPTIONS
+             2 TOP + 2 BOTTOM
+        ================================================== -->
+
+        <section class="dashboard-options">
+
+
+            <!-- =============================================
+                 ANALYSIS
+            ============================================== -->
+
+            <a href="./analysis.html"
+               class="dashboard-card">
+
+                <div class="card-icon">
+                    📊
+                </div>
+
+                <div>
+
+                    <h3>
+                        Analysis
+                    </h3>
+
+                    <p>
+                        Analyze your startup and predict
+                        potential risks and outcomes.
+                    </p>
+
+                </div>
+
+                <span class="arrow">
+                    →
+                </span>
+
+            </a>
+
+
+
+            <!-- =============================================
+                 IMPROVEMENTS
+            ============================================== -->
+
+            <a href="./improvements.html"
+               class="dashboard-card">
+
+                <div class="card-icon">
+                    💡
+                </div>
+
+                <div>
+
+                    <h3>
+                        Improvements
+                    </h3>
+
+                    <p>
+                        Get recommendations and strategies
+                        to improve your startup.
+                    </p>
+
+                </div>
+
+                <span class="arrow">
+                    →
+                </span>
+
+            </a>
+
+
+
+            <!-- =============================================
+                 TRACKING
+            ============================================== -->
+
+            <a href="./tracking.html"
+               class="dashboard-card">
+
+                <div class="card-icon">
+                    📈
+                </div>
+
+                <div>
+
+                    <h3>
+                        Tracking
+                    </h3>
+
+                    <p>
+                        Track your startup progress,
+                        performance and improvements.
+                    </p>
+
+                </div>
+
+                <span class="arrow">
+                    →
+                </span>
+
+            </a>
+
+
+
+            <!-- =============================================
+                 RULES & REGULATIONS
+            ============================================== -->
+
+            <a href="./rules.html"
+               class="dashboard-card">
+
+                <div class="card-icon">
+                    ⚖️
+                </div>
+
+                <div>
+
+                    <h3>
+                        Rules & Regulations
+                    </h3>
+
+                    <p>
+                        View important startup rules,
+                        regulations and guidelines.
+                    </p>
+
+                </div>
+
+                <span class="arrow">
+                    →
+                </span>
+
+            </a>
+
+
+        </section>
+
+
+
+        <!-- =================================================
+             ABOUT PLATFORM
+        ================================================== -->
+
+        <section class="project-info">
+
+            <h2>
+                About the Platform
+            </h2>
+
+            <p>
+
+                Startup Analysis helps entrepreneurs
+                evaluate their startup using machine
+                learning analysis, improvement
+                recommendations, progress tracking
+                and startup regulations.
+
+            </p>
+
+        </section>
+
+
+
+        <!-- =================================================
+             FOOTER
+        ================================================== -->
+
+        <footer>
+
+            © 2026 Startup Analysis.
+            All rights reserved.
+
+        </footer>
+
+
+    </main>
+
+
+
+    <!-- =================================================
+         DASHBOARD JAVASCRIPT
+    ================================================== -->
+
+    <script src="./dashboard.js"></script>
+
+
+</body>
+
+</html>

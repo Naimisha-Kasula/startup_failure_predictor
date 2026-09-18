@@ -1,0 +1,728 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Register | Startup Failure Predictor</title>
+
+    <link rel="stylesheet" href="register.css">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- =====================================================
+         SUCCESS POPUP
+    ====================================================== -->
+
+    <div id="successPopup" class="success-popup">
+
+        <div class="success-popup-content">
+
+            <div class="success-icon">
+                ✓
+            </div>
+
+            <h2>Registration Successful!</h2>
+
+            <p>
+                Your account has been created successfully.
+            </p>
+
+            <button type="button" id="popupLoginBtn">
+                Continue to Login
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- =====================================================
+         REGISTER PAGE
+    ====================================================== -->
+
+    <div class="register-page">
+
+        <!-- LEFT SECTION -->
+
+        <section class="left-section">
+
+            <div class="left-content">
+
+                <h1>Startup Failure Predictor</h1>
+
+                <h2>Predict. Analyze. Decide.</h2>
+
+                <p>
+                    Create your account and use our
+                    AI-powered platform to analyze
+                    startup risks and improve business decisions.
+                </p>
+
+            </div>
+
+
+            <div class="feature-list">
+
+                <div class="feature">
+
+                    <i class="fa-solid fa-chart-line"></i>
+
+                    <div>
+                        <h3>AI Risk Analysis</h3>
+                        <p>Identify potential startup risks.</p>
+                    </div>
+
+                </div>
+
+
+                <div class="feature">
+
+                    <i class="fa-solid fa-lightbulb"></i>
+
+                    <div>
+                        <h3>Smart Improvements</h3>
+                        <p>
+                            Get recommendations based on your analysis.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="feature">
+
+                    <i class="fa-solid fa-chart-simple"></i>
+
+                    <div>
+                        <h3>Track Progress</h3>
+                        <p>Monitor your startup risk over time.</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- RIGHT SECTION -->
+
+        <section class="right-section">
+
+            <div class="register-box">
+
+                <!-- HEADER -->
+
+                <div class="form-header">
+
+                    <h1>Create Account</h1>
+
+                    <p>
+                        Register to access Startup Failure Predictor
+                    </p>
+
+                </div>
+
+
+                <!-- FORM -->
+
+                <form id="registerForm">
+
+            
+                  <div class="form-group">
+
+    <label for="companyName">
+        Company Name
+    </label>
+
+    <div class="input-box">
+
+        <i class="fa-solid fa-building"></i>
+
+        <input
+            type="text"
+            id="companyName"
+            name="companyName"
+            placeholder="Enter company name"
+            required>
+
+    </div>
+
+</div>  
+
+                    <!-- FOUNDER NAME -->
+
+                    <div class="input-group">
+
+                        <label for="founderName">
+                            Founder Name
+                        </label>
+
+                        <div class="input-box">
+
+                            <i class="fa-solid fa-user"></i>
+
+                            <input
+                                type="text"
+                                id="founderName"
+                                placeholder="Enter your name"
+                                required
+                            >
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- EMAIL -->
+
+                    <div class="input-group">
+
+                        <label for="email">
+                            Email Address
+                        </label>
+
+                        <div class="input-box">
+
+                            <i class="fa-solid fa-envelope"></i>
+
+                            <input
+                                type="email"
+                                id="email"
+                                placeholder="Enter your email"
+                                required
+                            >
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- PHONE -->
+
+                    <div class="input-group">
+
+                        <label for="phone">
+                            Phone Number
+                        </label>
+
+                        <div class="input-box">
+
+                            <i class="fa-solid fa-phone"></i>
+
+                            <input
+                                type="tel"
+                                id="phone"
+                                placeholder="10-digit phone number"
+                                maxlength="10"
+                                pattern="[0-9]{10}"
+                                required
+                            >
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- PASSWORD -->
+
+                    <div class="input-group">
+
+                        <label for="password">
+                            Password
+                        </label>
+
+                        <div class="input-box">
+
+                            <i class="fa-solid fa-lock"></i>
+
+                            <input
+                                type="password"
+                                id="password"
+                                placeholder="Create password"
+                                required
+                            >
+
+                            <button
+                                type="button"
+                                class="password-toggle"
+                                data-target="password"
+                                aria-label="Show password"
+                            >
+                                <i class="fa-solid fa-eye"></i>
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- CONFIRM PASSWORD -->
+
+                    <div class="input-group">
+
+                        <label for="confirmPassword">
+                            Confirm Password
+                        </label>
+
+                        <div class="input-box">
+
+                            <i class="fa-solid fa-lock"></i>
+
+                            <input
+                                type="password"
+                                id="confirmPassword"
+                                placeholder="Confirm password"
+                                required
+                            >
+
+                            <button
+                                type="button"
+                                class="password-toggle"
+                                data-target="confirmPassword"
+                                aria-label="Show password"
+                            >
+                                <i class="fa-solid fa-eye"></i>
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- TERMS -->
+
+                    <div class="terms">
+
+                        <label>
+
+                            <input
+                                type="checkbox"
+                                id="terms"
+                                required
+                            >
+
+                            <span>
+                                I agree to the
+                                <a href="#">
+                                    Terms & Conditions
+                                </a>
+                            </span>
+
+                        </label>
+
+                    </div>
+
+
+                    <!-- CREATE ACCOUNT -->
+
+                    <button
+                        type="submit"
+                        class="register-btn"
+                    >
+
+                        <span>Create Account</span>
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </button>
+
+
+                    <!-- LOGIN -->
+
+                    <p class="login-text">
+
+                        Already have an account?
+
+                        <a href="index.html">
+                            Login
+                        </a>
+
+                    </p>
+
+                </form>
+
+            </div>
+
+        </section>
+
+    </div>
+
+
+    <!-- =====================================================
+         JAVASCRIPT
+    ====================================================== -->
+<script type="module">
+
+import { initializeApp } 
+    from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+
+import { 
+    getAuth,
+    createUserWithEmailAndPassword
+} 
+from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
+
+import {
+    getDatabase,
+    ref,
+    set
+}
+from "https://www.gstatic.com/firebasejs/10.12.2/firebase-database.js";
+
+
+// =====================================================
+// FIREBASE CONFIG
+// =====================================================
+
+const firebaseConfig = {
+
+    apiKey: "AIzaSyD7lOBSLOZmx8RTA-VRfR5HpMaxKQD02Ys",
+
+    authDomain: "startup-failure-predictor.firebaseapp.com",
+
+    databaseURL:
+        "https://startup-failure-predictor-default-rtdb.asia-southeast1.firebasedatabase.app",
+
+    projectId: "startup-failure-predictor",
+
+    storageBucket:
+        "startup-failure-predictor.firebasestorage.app",
+
+    messagingSenderId: "12145976790",
+
+    appId: "1:12145976790:web:291eae3b0482f080ce3077"
+};
+
+
+// =====================================================
+// INITIALIZE FIREBASE
+// =====================================================
+
+const app = initializeApp(firebaseConfig);
+
+const auth = getAuth(app);
+
+const database = getDatabase(app);
+
+
+// =====================================================
+// GET ELEMENTS
+// =====================================================
+
+const form = document.getElementById("registerForm");
+
+const successPopup =
+    document.getElementById("successPopup");
+
+const popupLoginBtn =
+    document.getElementById("popupLoginBtn");
+
+const registerButton =
+    document.querySelector(".register-btn");
+
+
+// =====================================================
+// PASSWORD EYE TOGGLE
+// =====================================================
+
+document
+    .querySelectorAll(".password-toggle")
+    .forEach(function(button) {
+
+        button.addEventListener("click", function(event) {
+
+            event.preventDefault();
+
+            const targetId =
+                button.getAttribute("data-target");
+
+            const input =
+                document.getElementById(targetId);
+
+            const icon =
+                button.querySelector("i");
+
+
+            if (input.type === "password") {
+
+                input.type = "text";
+
+                icon.classList.remove("fa-eye");
+
+                icon.classList.add("fa-eye-slash");
+
+                button.setAttribute(
+                    "aria-label",
+                    "Hide password"
+                );
+
+            } else {
+
+                input.type = "password";
+
+                icon.classList.remove("fa-eye-slash");
+
+                icon.classList.add("fa-eye");
+
+                button.setAttribute(
+                    "aria-label",
+                    "Show password"
+                );
+            }
+
+        });
+
+    });
+
+
+// =====================================================
+// REGISTER
+// =====================================================
+
+form.addEventListener("submit", async function(event) {
+
+    event.preventDefault();
+
+
+    // =================================================
+    // GET VALUES
+    // =================================================
+
+    const companyName =
+        document.getElementById("companyName")
+            .value
+            .trim();
+
+    const founderName =
+        document.getElementById("founderName")
+            .value
+            .trim();
+
+    const email =
+        document.getElementById("email")
+            .value
+            .trim();
+
+    const phone =
+        document.getElementById("phone")
+            .value
+            .trim();
+
+    const password =
+        document.getElementById("password")
+            .value;
+
+    const confirmPassword =
+        document.getElementById("confirmPassword")
+            .value;
+
+    const terms =
+        document.getElementById("terms")
+            .checked;
+
+
+    // =================================================
+    // VALIDATION
+    // =================================================
+
+    if (!companyName) {
+
+        alert("Please enter company name.");
+
+        return;
+    }
+
+
+    if (!founderName) {
+
+        alert("Please enter founder name.");
+
+        return;
+    }
+
+
+    if (!email) {
+
+        alert("Please enter email address.");
+
+        return;
+    }
+
+
+    if (!/^[0-9]{10}$/.test(phone)) {
+
+        alert("Please enter a valid 10-digit phone number.");
+
+        return;
+    }
+
+
+    if (password.length < 6) {
+
+        alert("Password must contain at least 6 characters.");
+
+        return;
+    }
+
+
+    if (password !== confirmPassword) {
+
+        alert("Passwords do not match.");
+
+        return;
+    }
+
+
+    if (!terms) {
+
+        alert("Please agree to the Terms & Conditions.");
+
+        return;
+    }
+
+
+    // =================================================
+    // BUTTON
+    // =================================================
+
+    registerButton.disabled = true;
+
+
+    registerButton.innerHTML =
+        '<span>Creating Account...</span>' +
+        '<i class="fa-solid fa-spinner fa-spin"></i>';
+
+
+    try {
+
+        // =================================================
+        // CREATE AUTH ACCOUNT
+        // =================================================
+
+        const credential =
+            await createUserWithEmailAndPassword(
+                auth,
+                email,
+                password
+            );
+
+
+        const user = credential.user;
+
+
+        // =================================================
+        // SAVE USER DETAILS
+        // =================================================
+
+        await set(
+            ref(database, "users/" + user.uid),
+            {
+
+                uid: user.uid,
+
+                companyName: companyName,
+
+                founderName: founderName,
+
+                email: email,
+
+                phone: phone,
+
+                createdAt: new Date().toISOString()
+
+            }
+        );
+
+
+        // =================================================
+        // SUCCESS
+        // =================================================
+
+        successPopup.style.display = "flex";
+
+
+        // Clear only after successful registration
+        form.reset();
+
+
+    } catch (error) {
+
+        console.error(error);
+
+
+        if (error.code === "auth/email-already-in-use") {
+
+            alert(
+                "This email is already registered. Please login."
+            );
+
+        }
+
+        else if (error.code === "auth/invalid-email") {
+
+            alert("Invalid email address.");
+
+        }
+
+        else if (error.code === "auth/weak-password") {
+
+            alert("Password must contain at least 6 characters.");
+
+        }
+
+        else if (
+            error.code === "PERMISSION_DENIED" ||
+            error.code === "database/permission-denied"
+        ) {
+
+            alert(
+                "Registration account was created, but Firebase Database permission is denied."
+            );
+
+        }
+
+        else {
+
+            alert(
+                "Registration failed: " + error.message
+            );
+
+        }
+
+    }
+
+
+    // =================================================
+    // RESTORE BUTTON
+    // =================================================
+
+    registerButton.disabled = false;
+
+    registerButton.innerHTML =
+        '<span>Create Account</span>' +
+        '<i class="fa-solid fa-arrow-right"></i>';
+
+});
+
+
+// =====================================================
+// POPUP LOGIN
+// =====================================================
+
+popupLoginBtn.addEventListener("click", function() {
+
+    window.location.href = "index.html";
+
+});
+
+</script>
